@@ -1,42 +1,119 @@
-# Simple workflow for deploying static content to GitHub Pages
-name: Deploy static content to Pages
+name: Deploy Static Files
 
 on:
-  # Runs on pushes targeting the default branch
   push:
-    branches: ["main"]
-
-  # Allows you to run this workflow manually from the Actions tab
-  workflow_dispatch:
-
-# Sets permissions of the GITHUB_TOKEN to allow deployment to GitHub Pages
-permissions:
-  contents: read
-  pages: write
-  id-token: write
-
-# Allow one concurrent deployment
-concurrency:
-  group: "pages"
-  cancel-in-progress: true
+    branches:
+      - main
 
 jobs:
-  # Single deploy job since we're just deploying
+  docs:
+    uses: pmndrs/docs/.github/workflows/build.yml@v2
+    with:
+      mdx: 'docs'
+      libname: 'xr'
+      base_path: '/xr/docs'
+      icon: '🤳'
+      github: 'https://github.com/pmndrs/xr'
+      home_redirect: '/getting-started/introduction'
+
+  examples:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Setup Node
+        uses: actions/setup-node@v3
+        with:
+          node-version: 18
+
+      - uses: pnpm/action-setup@v2
+        name: Install pnpm
+        with:
+          version: 8
+          run_install: true
+
+      # Examples
+      - name: Building Examples
+        run: |
+          pnpm -r copy
+          pnpm -r build
+
+      - name: Copy Examples
+        run: |
+          mkdir -p public/examples/minecraft
+          mkdir -p public/examples/pingpong
+          mkdir -p public/examples/rag-doll
+          mkdir -p public/examples/stage
+          mkdir -p public/examples/watch
+          mkdir -p public/examples/room-with-shadows
+          mkdir -p public/examples/layers
+          mkdir -p public/examples/secondary-input-sources
+          mkdir -p public/examples/editor
+          mkdir -p public/examples/hit-testing
+          mkdir -p public/examples/uikit
+          cp -r ./examples/minecraft/dist/* ./public/examples/minecraft
+          cp -r ./examples/pingpong/dist/* ./public/examples/pingpong
+          cp -r ./examples/rag-doll/dist/* ./public/examples/rag-doll
+          cp -r ./examples/stage/dist/* ./public/examples/stage
+          cp -r ./examples/watch/dist/* ./public/examples/watch
+          cp -r ./examples/room-with-shadows/dist/* ./public/examples/room-with-shadows
+          cp -r ./examples/layers/dist/* ./public/examples/layers
+          cp -r ./examples/secondary-input-sources/dist/* ./public/examples/secondary-input-sources
+          cp -r ./examples/editor/dist/* ./public/examples/editor
+          cp -r ./examples/hit-testing/dist/* ./public/examples/hit-testing
+          cp -r ./examples/uikit/dist/* ./public/examples/uikit
+
+      - name: Upload Artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: examples
+          path: public/examples/
+
+  bundle-artifacts:
+    runs-on: ubuntu-latest
+    needs:
+      - docs
+      - examples
+    steps:
+      - name: Download Examples Artifiact
+        uses: actions/download-artifact@v4
+        with:
+          name: examples
+          path: ./examples
+
+      - name: Download Docs Artifiact
+        uses: actions/download-artifact@v4
+        with:
+          name: github-pages
+          path: ./docs
+
+      - name: Extract Docs
+        run: tar -xf ./docs/artifact.tar -C ./docs/
+
+      - name: Create deploy.tar
+        run: tar -cf deploy.tar ./*
+
+      - name: Upload Artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: deploy
+          path: ./deploy.tar
+
   deploy:
+    needs: bundle-artifacts
+    runs-on: ubuntu-latest
+    permissions:
+      pages: write # to deploy to Pages
+      id-token: write # to verify the deployment originates from an appropriate source
+
+    # Deploy to the github-pages environment
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
-    runs-on: ubuntu-latest
+
     steps:
-      - name: Checkout
-        uses: actions/checkout@v1
-      - name: Setup Pages
-        uses: actions/configure-pages@v1
-      - name: Upload artifact
-        uses: actions/upload-pages-artifact@v4
-        with:
-          # Upload entire repository
-          path: '.'
-      - name: Deploy to GitHub Pages
-        id: deployment
+      - id: deployment
         uses: actions/deploy-pages@v4
+        with:
+          artifact_name: deploy
