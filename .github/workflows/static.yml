@@ -1,37 +1,63 @@
-name: Deploy Static Files
+# .github/workflows/static.yml
+name: Deploy Static Site to GitHub Pages
 
 on:
   push:
     branches:
-      - main
+      - main  # Change this if your default branch is different
 
 jobs:
-  # Build job
   build:
-    # Specify runner +  build & upload the static files as an artifact
     runs-on: ubuntu-latest
     steps:
-      - name: Build static files
-        id: build
-        run: |
-          # <Not provided for brevity>
-          # At a minimum this step should build the static files of your site
-          # <Not provided for brevity>
+      - name: Checkout Repository
+        uses: actions/checkout@v3
 
-      - name: Upload static files as artifact
-        id: deployment
-        uses: actions/upload-pages-artifact@v3 # or specific "vX.X.X" version tag for this action
+      # --- Uncomment and adjust the following steps if you use a specific static site generator ---
+      # For Hugo:
+      # - name: Setup Hugo
+      #   uses: peaceiris/actions-hugo@v2
+      #   with:
+      #     hugo-version: '0.92.0'
+      #
+      # For Jekyll (Ruby):
+      # - name: Setup Ruby
+      #   uses: ruby/setup-ruby@v1
+      #   with:
+      #     ruby-version: '3.1'  # Adjust as needed
+
+      # Example using Node.js (if your site is built with a Node-based tool)
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
         with:
-          path: build_outputs_folder/
+          node-version: '16'  # Change as needed
 
-  # Deployment job
+      - name: Install Dependencies
+        run: npm install
+
+      - name: Build Site
+        run: npm run build
+        # Make sure that the build output lands in the directory below
+        # If your build output is different, update the artifact path accordingly
+
+      - name: Upload Artifact for Deployment
+        uses: actions/upload-pages-artifact@v1
+        with:
+          path: './build'  # Change to your static site’s output folder (e.g., './public')
+
   deploy:
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
     runs-on: ubuntu-latest
     needs: build
+    environment:
+      name: github-pages
+      url: ${{ steps.deploy-pages.outputs.page_url }}
     steps:
+      - name: Download Artifact
+        uses: actions/download-pages-artifact@v1
+        with:
+          path: './build'
+
       - name: Deploy to GitHub Pages
-        id: deployment
-        uses: actions/deploy-pages@v4
+        id: deploy-pages
+        uses: actions/deploy-pages@v1
+
