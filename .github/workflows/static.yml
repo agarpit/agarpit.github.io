@@ -13,37 +13,22 @@ jobs:
       - name: Checkout Repository
         uses: actions/checkout@v3
 
-      # --- Uncomment and adjust the following steps if you use a specific static site generator ---
-      # For Hugo:
-      # - name: Setup Hugo
-      #   uses: peaceiris/actions-hugo@v2
-      #   with:
-      #     hugo-version: '0.92.0'
-      #
-      # For Jekyll (Ruby):
-      # - name: Setup Ruby
-      #   uses: ruby/setup-ruby@v1
-      #   with:
-      #     ruby-version: '3.1'  # Adjust as needed
-
-      # Example using Node.js (if your site is built with a Node-based tool)
       - name: Setup Node.js
         uses: actions/setup-node@v3
         with:
-          node-version: '16'  # Change as needed
+          node-version: '16'  # Adjust if needed
 
       - name: Install Dependencies
         run: npm install
 
       - name: Build Site
         run: npm run build
-        # Make sure that the build output lands in the directory below
-        # If your build output is different, update the artifact path accordingly
+        # Ensure your build output goes to the directory below
 
       - name: Upload Artifact for Deployment
         uses: actions/upload-pages-artifact@v1
         with:
-          path: './build'  # Change to your static site’s output folder (e.g., './public')
+          path: './build'  # Change this if your output directory is different
 
   deploy:
     runs-on: ubuntu-latest
