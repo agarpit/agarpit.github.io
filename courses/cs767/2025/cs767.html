@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CS767 - Theoretical Machine Learning</title>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+        }
+        h1, h2, h3 {
+            font-family: 'Lato', sans-serif;
+        }
+        .section-title {
+            border-bottom: 2px solid #e2e8f0;
+            padding-bottom: 0.5rem;
+            margin-bottom: 1.5rem;
+        }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+    <div class="container mx-auto px-4 sm:px-6 lg:px-8 py-8">
+
+        <!-- Header -->
+        <header class="text-center mb-10">
+            <h1 class="text-4xl md:text-5xl font-bold text-gray-900">CS767 - Theoretical Machine Learning</h1>
+            <p class="text-lg text-gray-600 mt-2">Autumn 2025</p>
+        </header>
+
+        <!-- Main Content -->
+        <main class="max-w-4xl mx-auto">
+
+            <!-- Course Information -->
+            <section id="info" class="mb-12 bg-white p-6 rounded-lg shadow-sm border border-gray-200">
+                <h2 class="text-2xl font-bold section-title">Course Information</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <div>
+                        <h3 class="font-bold text-lg text-gray-700">Instructors</h3>
+                        <p>Arpit Agrawal</p>
+                        <p>Sujoy Bhore</p>
+                    </div>
+                    <div>
+                        <h3 class="font-bold text-lg text-gray-700">Teaching Assistants</h3>
+                        <p>To be announced</p>
+                    </div>
+                    <div>
+                        <h3 class="font-bold text-lg text-gray-700">Lectures</h3>
+                        <p><strong>Venue:</strong> To be announced</p>
+                        <p><strong>Timings:</strong> To be announced</p>
+                    </div>
+                    <div>
+                        <h3 class="font-bold text-lg text-gray-700">Office Hours</h3>
+                        <p>To be announced</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Course Description -->
+            <section id="description" class="mb-12">
+                <h2 class="text-2xl font-bold section-title">Course Description</h2>
+                <p class="text-lg leading-relaxed">
+                    This course provides a rigorous introduction to the fundamental concepts and theoretical underpinnings of machine learning.  Key topics include the PAC (Probably Approximately Correct) learning model, VC dimension, Rademacher complexity, generalization bounds, online learning, and other advanced theoretical topics. The goal is to provide students with a deep understanding of the principles that govern machine learning.
+                </p>
+            </section>
+            
+            <!-- Prerequisites -->
+            <section id="prerequisites" class="mb-12">
+                <h2 class="text-2xl font-bold section-title">Prerequisites</h2>
+                <p class="text-lg">
+                    A strong foundation in probability and linear algebra is expected. Prior exposure to machine learning is also expected.
+                </p>
+            </section>
+
+            <!-- Reference Book -->
+            <section id="reference" class="mb-12">
+                <h2 class="text-2xl font-bold section-title">Reference Book</h2>
+                <div class="bg-white p-4 rounded-lg shadow-sm border border-gray-200">
+                    <p class="text-lg">
+                        The primary reference for this course will be:
+                    </p>
+                    <p class="text-lg font-semibold mt-2">
+                        <em>Understanding Machine Learning: From Theory to Algorithms</em> by Shai Shalev-Shwartz and Shai Ben-David.
+                    </p>
+                </div>
+            </section>
+
+            <!-- Lecture Schedule -->
+            <section id="schedule" class="mb-12">
+                <h2 class="text-2xl font-bold section-title">Lecture Schedule</h2>
+                <div class="overflow-x-auto bg-white rounded-lg shadow-md">
+                    <table class="w-full text-left">
+                        <thead class="bg-gray-200">
+                            <tr>
+                                <th class="p-4 font-bold uppercase text-sm text-gray-600">Week</th>
+                                <th class="p-4 font-bold uppercase text-sm text-gray-600">Dates</th>
+                                <th class="p-4 font-bold uppercase text-sm text-gray-600">Topics to be Covered</th>
+                                <th class="p-4 font-bold uppercase text-sm text-gray-600">Lecturer</th>
+                                <th class="p-4 font-bold uppercase text-sm text-gray-600">Lecture Notes</th>
+                            </tr>
+                        </thead>
+                        <tbody class="divide-y divide-gray-200">
+                            <tr class="hover:bg-gray-100">
+                                <td class="p-4 font-semibold">1</td>
+                                <td class="p-4">July 28 - August 1</td>
+                                <td class="p-4">Introduction and Logistics; Overview of Machine Learning Algorithms; Consistency Model and Intro to PAC Learning</td>
+                                <td class="p-4">Arpit</td>
+                                <td class="p-4"></td>
+                            </tr>
+                            <tr class="hover:bg-gray-100">
+                                <td class="p-4 font-semibold">2</td>
+                                <td class="p-4">August 4 - August 8</td>
+                                <td class="p-4">PAC Continued; Uniform Convergence; Bias-Variance Tradeoff</td>
+                                <td class="p-4">Arpit</td>
+                                <td class="p-4"></td>
+                            </tr>
+                            <tr class="hover:bg-gray-100">
+                                <td class="p-4 font-semibold">3</td>
+                                <td class="p-4">August 11 - August 15</td>
+                                <td class="p-4">VC Dimension; &epsilon;-net; Radamacher Complexity</td>
+                                <td class="p-4">Sujoy</td>
+                                <td class="p-4"></td>
+                            </tr>
+                            <tr class="hover:bg-gray-100">
+                                <td class="p-4 font-semibold">4</td>
+                                <td class="p-4">August 18 - August 22</td>
+                                <td class="p-4">Gradient Descent Based Generalization Proofs, Sample complexity; Stochastic Gradient Descent</td>
+                                <td class="p-4">Arpit</td>
+                                <td class="p-4"></td>
+                            </tr>
+                            <tr class="hover:bg-gray-100">
+                                <td class="p-4 font-semibold">5</td>
+                                <td class="p-4">August 25 - August 29</td>
+                                <td class="p-4">Modern results on Neural Network Generalization; Double Descent</td>
+                                <td class="p-4">Arpit</td>
+                                <td class="p-4"></td>
+                            </tr>
+                            <tr class="hover:bg-gray-100">
+                                <td class="p-4 font-semibold">6</td>
+                                <td class="p-4">September 1 - September 5</td>
+                                <td class="p-4">Online Learning; Online Perceptron; Experts and Multiplicative Weights</td>
+                                <td class="p-4">Arpit</td>
+                                <td class="p-4"></td>
+                            </tr>
+                            <tr class="hover:bg-gray-100">
+                                <td class="p-4 font-semibold">7</td>
+                                <td class="p-4">September 8 - September 12</td>
+                                <td class="p-4">Online Convex Optimization; Follow The (Regularized) Leader  algorithms</td>
+                                <td class="p-4">Arpit</td>
+                                <td class="p-4"></td>
+                            </tr>
+                            <tr class="bg-blue-100/50">
+                                <td class="p-4 font-semibold text-center text-blue-800" colspan="4">Mid-Semester Break (September 15 - September 19)</td>
+                            </tr>
+                            <tr class="hover:bg-gray-100">
+                                <td class="p-4 font-semibold">8</td>
+                                <td class="p-4">September 22 - September 26</td>
+                                <td class="p-4">Bandit algorithms and internal regret; UCB regret bound, Thompson sampling; EXP3 Algorithm</td>
+                                <td class="p-4">Arpit</td>
+                                <td class="p-4"></td>
+                            </tr>
+                            <tr class="hover:bg-gray-100">
+                                <td class="p-4 font-semibold">9</td>
+                                <td class="p-4">September 29 - October 3</td>
+                                <td class="p-4">Ranking and Complex Prediction</td>
+                                <td class="p-4">Arpit</td>
+                                <td class="p-4"></td>
+                            </tr>
+                            <tr class="hover:bg-gray-100">
+                                <td class="p-4 font-semibold">10</td>
+                                <td class="p-4">October 6 - October 10</td>
+                                <td class="p-4">Dimensionality Reduction</td>
+                                <td class="p-4">Sujoy</td>
+                                <td class="p-4"></td>
+                            </tr>
+                            <tr class="hover:bg-gray-100">
+                                <td class="p-4 font-semibold">11</td>
+                                <td class="p-4">October 13 - October 17</td>
+                                <td class="p-4">Clustering</td>
+                                <td class="p-4">Sujoy</td>
+                                <td class="p-4"></td>
+                            </tr>
+                            <tr class="bg-yellow-100/50">
+                                <td class="p-4 font-semibold text-center text-yellow-800" colspan="4">Diwali Week (October 20 - October 24)</td>
+                            </tr>
+                            <tr class="hover:bg-gray-100">
+                                <td class="p-4 font-semibold">12</td>
+                                <td class="p-4">October 27 - October 31</td>
+                                <td class="p-4">Invited Talks on Advanced Topics</td>
+                                <td class="p-4">Guest</td>
+                                <td class="p-4"></td>
+                            </tr>
+                             <tr class="bg-green-100/50">
+                                <td class="p-4 font-semibold text-center text-green-800" colspan="4">End Semester Exams (November 3 - November 7)</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+            
+            <!-- Grading Policy -->
+            <section id="grading" class="mb-12">
+                <h2 class="text-2xl font-bold section-title">Grading Policy</h2>
+                <p class="text-lg">
+                    The grading policy will be based on a combination of assignments, scribing notes, a mid-term exam, and a final exam. The exact weights will be announced in the first lecture.
+                </p>
+            </section>
+
+        </main>
+
+        <!-- Footer -->
+        <footer class="text-center mt-12 pt-6 border-t border-gray-300">
+            <p class="text-gray-600">&copy; 2025 Arpit Agrawal. All rights reserved.</p>
+        </footer>
+
+    </div>
+
+</body>
+</html>
+
