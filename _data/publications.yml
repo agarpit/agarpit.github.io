@@ -1,0 +1,446 @@
+- title: "Creator Incentives in Recommender Systems: A Cooperative Game-Theoretic Approach for Stable and Fair Collaboration in Multi-Agent Bandits"
+  authors:
+    - name: Ramakrishnan K
+    - name: Arpit Agarwal
+      me: true
+    - name: Lakshmi Subramanian
+      url: https://cs.nyu.edu/~lakshmi/Lakshmi/Home.html
+    - name: Maximilian Nickel
+      url: https://maxn.io
+  venue: AISTATS
+  venue_full: International Conference on Artificial Intelligence and Statistics
+  badge: aistats
+  year: 2026
+  award: "Oral Presentation (top 10 / ~2100)"
+
+- title: "Ads that Stick: Near-Optimal Ad Optimization through Psychological Behavior Models"
+  authors:
+    - name: Kailash Gopal Darmasubramanian
+    - name: Akash Pareek
+    - name: Arindam Khan
+      url: https://www.csa.iisc.ac.in/~arindamkhan/
+    - name: Arpit Agarwal
+      me: true
+  venue: ICLR
+  venue_full: International Conference on Learning Representations
+  badge: iclr
+  year: 2026
+  links:
+    - label: PDF
+      url: https://arxiv.org/pdf/2509.20304
+
+- title: "Misalignment, Learning, and Ranking: Harnessing Users Limited Attention"
+  authors:
+    - name: Arpit Agarwal
+      me: true
+    - name: Rad Niazadeh
+      url: https://faculty.chicagobooth.edu/rad-niazadeh
+    - name: Prathamesh Patil
+  venue: WINE
+  venue_full: Web and Internet Economics
+  badge: other
+  year: 2025
+  alphabetical: true
+  links:
+    - label: PDF
+      url: https://arxiv.org/abs/2402.14013
+
+- title: "Non-Stationary Dueling Bandits Under a Weighted Borda Criterion"
+  authors:
+    - name: Joe Suk
+    - name: Arpit Agarwal
+      me: true
+  venue: TMLR
+  venue_full: Transactions on Machine Learning Research
+  badge: other
+  year: 2025
+  award: "Invited for presentation at ICLR 2025"
+  links:
+    - label: PDF
+      url: https://arxiv.org/abs/2403.12950
+
+- title: "Learning-Augmented Dynamic Submodular Maximization"
+  authors:
+    - name: Arpit Agarwal
+      me: true
+    - name: Eric Balkanski
+      url: http://ericbalkanski.com
+  venue: NeurIPS
+  venue_full: Neural Information Processing Systems
+  badge: neurips
+  year: 2024
+  links:
+    - label: PDF
+      url: https://arxiv.org/pdf/2311.13006.pdf
+
+- title: "Semi-Bandit Learning for Monotone Stochastic Optimization"
+  authors:
+    - name: Arpit Agarwal
+      me: true
+    - name: Rohan Ghuge
+      url: https://rohanghuge.com/
+    - name: Viswanath Nagarajan
+      url: https://viswa.engin.umich.edu/
+  venue: FOCS
+  venue_full: IEEE Symposium on Foundations of Computer Science
+  badge: focs
+  year: 2024
+  alphabetical: true
+  links:
+    - label: PDF
+      url: https://arxiv.org/pdf/2312.15427.pdf
+
+- title: "System-2 Recommenders: Disentangling Utility and Engagement in Recommendation Systems via Temporal Point-Processes"
+  authors:
+    - name: Arpit Agarwal
+      me: true
+    - name: Nicolas Usunier
+      url: https://ai.meta.com/people/728025609447125/nicolas-usunier/
+    - name: Alessandro Lazaric
+    - name: Maximilian Nickel
+      url: https://maxn.io
+  venue: FAccT
+  venue_full: ACM Conference on Fairness, Accountability, and Transparency
+  badge: other
+  year: 2024
+  links:
+    - label: PDF
+      url: https://arxiv.org/pdf/2406.01611
+
+- title: "Online Recommendations for Agents with Discounted Adaptive Preferences"
+  authors:
+    - name: Arpit Agarwal
+      me: true
+    - name: William Brown
+  venue: ALT
+  venue_full: International Conference on Algorithmic Learning Theory
+  badge: other
+  year: 2024
+  alphabetical: true
+  links:
+    - label: PDF
+      url: https://arxiv.org/pdf/2302.06014.pdf
+
+- title: "Parallel Approximate Maximum Flows in Near-Linear Work and Polylogarithmic Depth"
+  authors:
+    - name: Arpit Agarwal
+      me: true
+    - name: Sanjeev Khanna
+      url: https://www.cis.upenn.edu/~sanjeev
+    - name: Huan Li
+    - name: Prathamesh Patil
+    - name: Chen Wang
+    - name: Nathan White
+    - name: Peilin Zhong
+  venue: SODA
+  venue_full: ACM-SIAM Symposium on Discrete Algorithms
+  badge: focs
+  year: 2024
+  alphabetical: true
+  links:
+    - label: PDF
+      url: https://arxiv.org/abs/2402.14950
+
+- title: "When Can We Track Significant Preference Shifts in Dueling Bandits?"
+  authors:
+    - name: Joe Suk
+    - name: Arpit Agarwal
+      me: true
+  venue: NeurIPS
+  venue_full: Neural Information Processing Systems
+  badge: neurips
+  year: 2023
+  links:
+    - label: PDF
+      url: https://arxiv.org/pdf/2302.06595.pdf
+
+- title: "Diversified Recommendations for Agents with Adaptive Preferences"
+  authors:
+    - name: Arpit Agarwal
+      me: true
+    - name: William Brown
+  venue: NeurIPS
+  venue_full: Neural Information Processing Systems
+  badge: neurips
+  year: 2022
+  alphabetical: true
+  links:
+    - label: PDF
+      url: https://arxiv.org/pdf/2210.07773.pdf
+
+- title: "Sublinear Algorithms for Hierarchical Clustering"
+  authors:
+    - name: Arpit Agarwal
+      me: true
+    - name: Sanjeev Khanna
+      url: https://www.cis.upenn.edu/~sanjeev
+    - name: Huan Li
+    - name: Prathamesh Patil
+  venue: NeurIPS
+  venue_full: Neural Information Processing Systems
+  badge: neurips
+  year: 2022
+  alphabetical: true
+  links:
+    - label: PDF
+      url: https://arxiv.org/abs/2206.07633
+
+- title: "An Asymptotically Optimal Batched Algorithm for the Dueling Bandit Problem"
+  authors:
+    - name: Arpit Agarwal
+      me: true
+    - name: Rohan Ghuge
+      url: https://rohanghuge.com/
+    - name: Viswanath Nagarajan
+      url: https://viswa.engin.umich.edu/
+  venue: NeurIPS
+  venue_full: Neural Information Processing Systems
+  badge: neurips
+  year: 2022
+  alphabetical: true
+  links:
+    - label: PDF
+      url: https://arxiv.org/pdf/2209.12108.pdf
+
+- title: "A Sharp Memory-Regret Trade-Off for Multi-Pass Streaming Bandits"
+  authors:
+    - name: Arpit Agarwal
+      me: true
+    - name: Sanjeev Khanna
+      url: https://www.cis.upenn.edu/~sanjeev
+    - name: Prathamesh Patil
+  venue: COLT
+  venue_full: Conference on Learning Theory
+  badge: colt
+  year: 2022
+  alphabetical: true
+  links:
+    - label: PDF
+      url: https://arxiv.org/pdf/2205.00984.pdf
+
+- title: "Batched Dueling Bandits"
+  authors:
+    - name: Arpit Agarwal
+      me: true
+    - name: Rohan Ghuge
+      url: https://rohanghuge.com/
+    - name: Viswanath Nagarajan
+      url: https://viswa.engin.umich.edu/
+  venue: ICML
+  venue_full: International Conference on Machine Learning
+  badge: icml
+  year: 2022
+  alphabetical: true
+  award: "Long presentation (top 2%)"
+  links:
+    - label: PDF
+      url: https://arxiv.org/pdf/2202.10660.pdf
+
+- title: "PAC Top-k Identification under SST in Limited Rounds"
+  authors:
+    - name: Arpit Agarwal
+      me: true
+    - name: Sanjeev Khanna
+      url: https://www.cis.upenn.edu/~sanjeev
+    - name: Prathamesh Patil
+  venue: AISTATS
+  venue_full: International Conference on Artificial Intelligence and Statistics
+  badge: aistats
+  year: 2022
+  alphabetical: true
+  links:
+    - label: PDF
+      url: papers/1152.pdf
+
+- title: "Stochastic Dueling Bandits with Adversarial Corruption"
+  authors:
+    - name: Arpit Agarwal
+      me: true
+    - name: Shivani Agarwal
+      url: http://shivani-agarwal.net
+    - name: Prathamesh Patil
+  venue: ALT
+  venue_full: International Conference on Algorithmic Learning Theory
+  badge: other
+  year: 2021
+  alphabetical: true
+  links:
+    - label: PDF
+      url: http://proceedings.mlr.press/v132/agarwal21a/agarwal21a.pdf
+
+- title: "Choice Bandits"
+  authors:
+    - name: Arpit Agarwal
+      me: true
+    - name: Nicholas Johnson
+    - name: Shivani Agarwal
+      url: http://shivani-agarwal.net
+  venue: NeurIPS
+  venue_full: Neural Information Processing Systems
+  badge: neurips
+  year: 2020
+  links:
+    - label: PDF
+      url: papers/choice_bandits.pdf
+    - label: Supplement
+      url: papers/choice_bandits_supplemental.pdf
+
+- title: "Rank Aggregation from Pairwise Comparisons in the Presence of Adversarial Corruptions"
+  authors:
+    - name: Arpit Agarwal
+      me: true
+    - name: Shivani Agarwal
+      url: http://shivani-agarwal.net
+    - name: Sanjeev Khanna
+      url: https://www.cis.upenn.edu/~sanjeev
+    - name: Prathamesh Patil
+  venue: ICML
+  venue_full: International Conference on Machine Learning
+  badge: icml
+  year: 2020
+  alphabetical: true
+  links:
+    - label: PDF
+      url: https://proceedings.icml.cc/static/paper_files/icml/2020/4955-Paper.pdf
+
+- title: "Peer Prediction with Heterogeneous Users"
+  authors:
+    - name: Arpit Agarwal
+      me: true
+    - name: Debmalya Mandal
+      url: http://scholar.harvard.edu/dmandal/home
+    - name: David C. Parkes
+      url: http://www.eecs.harvard.edu/~parkes/
+    - name: Nisarg Shah
+      url: https://www.cs.toronto.edu/~nisarg/
+  venue: ACM TEAC
+  venue_full: ACM Transactions on Economics and Computation
+  badge: other
+  year: 2020
+  alphabetical: true
+  links:
+    - label: PDF
+      url: papers/het-pp.pdf
+
+- title: "Stochastic Submodular Cover with Limited Adaptivity"
+  authors:
+    - name: Arpit Agarwal
+      me: true
+    - name: Sepehr Assadi
+      url: https://www.cs.rutgers.edu/~sa1497/
+    - name: Sanjeev Khanna
+      url: http://www.cis.upenn.edu/~sanjeev
+  venue: SODA
+  venue_full: ACM-SIAM Symposium on Discrete Algorithms
+  badge: focs
+  year: 2019
+  alphabetical: true
+  links:
+    - label: PDF
+      url: papers/stochastic_submodular-cover_2019.pdf
+    - label: arXiv
+      url: https://arxiv.org/abs/1810.13351
+
+- title: "Accelerated Spectral Ranking"
+  authors:
+    - name: Arpit Agarwal
+      me: true
+    - name: Prathamesh Patil
+    - name: Shivani Agarwal
+      url: http://shivani-agarwal.net
+  venue: ICML
+  venue_full: International Conference on Machine Learning
+  badge: icml
+  year: 2018
+  links:
+    - label: PDF
+      url: papers/ranking-mnl.pdf
+
+- title: "Learning with Limited Rounds of Adaptivity: Coin Tossing, Multi-Armed Bandits, and Ranking from Pairwise Comparisons"
+  authors:
+    - name: Arpit Agarwal
+      me: true
+    - name: Shivani Agarwal
+      url: http://shivani-agarwal.net
+    - name: Sepehr Assadi
+      url: https://www.cs.rutgers.edu/~sa1497/
+    - name: Sanjeev Khanna
+      url: http://www.cis.upenn.edu/~sanjeev
+  venue: COLT
+  venue_full: Conference on Learning Theory
+  badge: colt
+  year: 2017
+  alphabetical: true
+  links:
+    - label: PDF
+      url: http://proceedings.mlr.press/v65/agarwal17c/agarwal17c.pdf
+
+- title: "Peer Prediction with Heterogeneous Users"
+  authors:
+    - name: Arpit Agarwal
+      me: true
+    - name: Debmalya Mandal
+      url: http://scholar.harvard.edu/dmandal/home
+    - name: David C. Parkes
+      url: http://www.eecs.harvard.edu/~parkes/
+    - name: Nisarg Shah
+      url: https://www.cs.toronto.edu/~nisarg/
+  venue: EC
+  venue_full: ACM Conference on Economics and Computation
+  badge: other
+  year: 2017
+  alphabetical: true
+  links:
+    - label: PDF
+      url: papers/agarwal_ec17.pdf
+
+- title: "Informed Truthfulness in Multi-Task Peer Prediction"
+  authors:
+    - name: Victor Shnayder
+    - name: Arpit Agarwal
+      me: true
+    - name: Rafael Frongillo
+      url: https://www.cs.colorado.edu/~raf/
+    - name: David C. Parkes
+      url: http://www.eecs.harvard.edu/~parkes/
+  venue: EC
+  venue_full: ACM Conference on Economics and Computation
+  badge: other
+  year: 2016
+  links:
+    - label: PDF
+      url: papers/multisignal.pdf
+    - label: arXiv
+      url: http://arxiv.org/abs/1603.03151
+
+- title: "On Consistent Surrogate Risk Minimization and Property Elicitation"
+  authors:
+    - name: Arpit Agarwal
+      me: true
+    - name: Shivani Agarwal
+      url: http://shivani-agarwal.net
+  venue: COLT
+  venue_full: Conference on Learning Theory
+  badge: colt
+  year: 2015
+  links:
+    - label: PDF
+      url: http://jmlr.org/proceedings/papers/v40/Agarwal15.pdf
+
+- title: "GEV-Canonical Regression for Accurate Binary Class Probability Estimation when One Class is Rare"
+  authors:
+    - name: Arpit Agarwal
+      me: true
+    - name: Harikrishna Narasimhan
+      url: https://sites.google.com/a/g.harvard.edu/harikrishna-narasimhan/
+    - name: Shivaram Kalyanakrishnan
+      url: https://www.cse.iitb.ac.in/~shivaram/
+    - name: Shivani Agarwal
+      url: http://shivani-agarwal.net
+  venue: ICML
+  venue_full: International Conference on Machine Learning
+  badge: icml
+  year: 2014
+  links:
+    - label: PDF
+      url: icml14-gev-canonical.pdf

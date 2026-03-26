@@ -1,0 +1,244 @@
+---
+# Custom styles
+---
+
+@import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}";
+@import "minimal-mistakes";
+
+/* ===== Global font size ===== */
+
+html {
+  font-size: 15px;
+
+  @media (min-width: 80em) {
+    font-size: 16px;
+  }
+}
+
+/* ===== Publication entries ===== */
+
+.pub-entry {
+  display: flex;
+  align-items: flex-start;
+  gap: 1.2em;
+  padding: 1.2em 0;
+  border-bottom: 1px solid #eee;
+}
+
+.pub-entry:last-child {
+  border-bottom: none;
+}
+
+/* Left badge column */
+.pub-badge-col {
+  flex-shrink: 0;
+  width: 100px;
+  padding-top: 0.15em;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.3em;
+}
+
+.pub-badge {
+  display: inline-block;
+  padding: 0.3em 0.7em;
+  border-radius: 0;
+  font-size: 0.78em;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+  color: #fff;
+  white-space: nowrap;
+  text-transform: uppercase;
+  background: rgba(123, 45, 142, 0.85);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.badge-neurips,
+.badge-icml,
+.badge-iclr,
+.badge-aistats,
+.badge-focs,
+.badge-colt,
+.badge-other   { background-color: #7b2d8e; }
+
+/* Right content column */
+.pub-content {
+  flex: 1;
+  min-width: 0;
+}
+
+.pub-title {
+  font-weight: 600;
+  font-size: 1.05em;
+  color: #222;
+  margin-bottom: 0.25em;
+  line-height: 1.45;
+}
+
+.pub-authors {
+  font-size: 0.9em;
+  color: #555;
+  margin-bottom: 0.2em;
+  line-height: 1.5;
+}
+
+.pub-authors a {
+  color: #555;
+  text-decoration: underline;
+  text-decoration-color: #ccc;
+  text-underline-offset: 2px;
+}
+
+.pub-authors a:hover {
+  color: #222;
+  text-decoration-color: #555;
+}
+
+.pub-me {
+  text-decoration: underline;
+  text-decoration-color: #999;
+  text-underline-offset: 2px;
+}
+
+.pub-venue-full {
+  font-size: 0.88em;
+  color: #777;
+  font-style: italic;
+  margin-bottom: 0.4em;
+}
+
+.pub-note {
+  font-size: 0.85em;
+  color: #888;
+  font-style: italic;
+}
+
+.pub-venue-info {
+  font-size: 0.88em;
+  color: #777;
+  font-style: italic;
+  margin-bottom: 0.3em;
+}
+
+/* ===== Award / highlight tags ===== */
+
+.pub-award {
+  display: inline-block;
+  padding: 0.2em 0.55em;
+  border-radius: 0;
+  font-size: 0.78em;
+  font-weight: 600;
+  background-color: #fdebd0;
+  color: #b7791f;
+  border: 1px solid #f0c674;
+  white-space: nowrap;
+  margin-bottom: 0.3em;
+}
+
+/* ===== Link buttons ===== */
+
+.pub-links {
+  display: flex;
+  gap: 0.5em;
+  flex-wrap: wrap;
+  margin-top: 0.4em;
+}
+
+.pub-link {
+  display: inline-block;
+  padding: 0.35em 0.9em;
+  border: 1px solid rgba(0, 0, 0, 0.12);
+  border-radius: 0;
+  font-size: 0.78em;
+  font-weight: 500;
+  color: #333 !important;
+  text-decoration: none !important;
+  background: rgba(255, 255, 255, 0.6);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  transition: all 0.15s ease;
+  white-space: nowrap;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.06);
+}
+
+.pub-link:hover {
+  background: rgba(123, 45, 142, 0.9);
+  color: #fff !important;
+  border-color: rgba(123, 45, 142, 0.9);
+}
+
+/* ===== Year headings ===== */
+
+.page__content h2 {
+  border-bottom: 2px solid #e8e8e8;
+  padding-bottom: 0.3em;
+  margin-top: 2em;
+  color: #333;
+}
+
+/* ===== Responsive: stack on small screens ===== */
+
+@media (max-width: 600px) {
+  .pub-entry {
+    flex-direction: column;
+    gap: 0.4em;
+  }
+
+  .pub-badge-col {
+    width: auto;
+  }
+}
+
+/* ===== Research cards (index page) ===== */
+
+.research-card {
+  border-left: 4px solid #333;
+  padding: 0.8em 1.2em;
+  margin-bottom: 1em;
+  background: #fafafa;
+
+  h4 {
+    margin: 0 0 0.3em 0;
+    font-size: 0.98em;
+    font-weight: 700;
+    color: #222;
+  }
+
+  p {
+    margin: 0 0 0.5em 0;
+    font-size: 0.88em;
+    color: #555;
+    line-height: 1.5;
+  }
+}
+
+.research-card-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35em;
+}
+
+/* ===== Research page ===== */
+
+/* ===== Misc ===== */
+
+.notice--info {
+  font-size: 0.95em;
+}
+
+.sidebar.sticky {
+  min-width: 200px;
+}
+
+table {
+  font-size: 0.9em;
+}
+
+table th {
+  background-color: #f2f3f3;
+}

@@ -1,0 +1,55 @@
+title: Arpit Agarwal
+name: Arpit Agarwal
+description: Assistant Professor, CSE, IIT Bombay
+url: "https://agarpit.github.io"
+baseurl: ""
+
+remote_theme: "mmistakes/minimal-mistakes@4.26.2"
+minimal_mistakes_skin: "default"
+
+plugins:
+  - jekyll-remote-theme
+  - jekyll-seo-tag
+  - jekyll-feed
+
+# Site author
+author:
+  name: "Arpit Agarwal"
+  avatar: "/assets/images/arpit.jpg"
+  bio: "Assistant Professor, CSE, IIT Bombay"
+  location: "Mumbai, India"
+  links:
+    - label: "aarpit@cse.iitb.ac.in"
+      icon: "fas fa-fw fa-envelope"
+      url: "mailto:aarpit@cse.iitb.ac.in"
+    - label: "Google Scholar"
+      icon: "fas fa-fw fa-graduation-cap"
+      url: "https://scholar.google.com/citations?user=YOUR_ID"
+    - label: "LinkedIn"
+      icon: "fab fa-fw fa-linkedin"
+      url: "https://www.linkedin.com/in/arpitagarwal729/"
+
+# Reading files
+include:
+  - _pages
+  - courses
+
+# Exclude from processing
+exclude:
+  - README.md
+  - screen.css~
+  - index_old.html
+
+# Defaults
+defaults:
+  - scope:
+      path: ""
+      type: pages
+    values:
+      layout: single
+      author_profile: true
+
+# Markdown
+markdown: kramdown
+kramdown:
+  input: GFM
