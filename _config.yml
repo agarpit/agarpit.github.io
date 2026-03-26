@@ -39,6 +39,7 @@ exclude:
   - README.md
   - screen.css~
   - index_old.html
+  - vendor
 
 # Defaults
 defaults:
