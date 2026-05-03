@@ -1,3 +1,27 @@
+- title: "Efficient Online Influence Maximization under the Independent Cascade Model with Node-Level Feedback"
+  authors:
+    - name: Arpit Agarwal
+      me: true
+    - name: Varad Deolankar
+    - name: Rohan Ghuge
+  venue: ICML
+  venue_full: International Conference on Machine Learning
+  badge: icml
+  year: 2026
+  note: "To Appear"
+
+- title: "An Efficient Joint Learning Approach for Item Response Theory"
+  authors:
+    - name: Tanish Agarwal
+    - name: Kaustubh Sejole
+    - name: Arpit Agarwal
+      me: true
+  venue: ICML
+  venue_full: International Conference on Machine Learning
+  badge: icml
+  year: 2026
+  note: "To Appear"
+
 - title: "Creator Incentives in Recommender Systems: A Cooperative Game-Theoretic Approach for Stable and Fair Collaboration in Multi-Agent Bandits"
   authors:
     - name: Ramakrishnan K
