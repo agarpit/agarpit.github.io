@@ -37,6 +37,7 @@ Algorithms that learn from pairwise comparisons, choice behavior, and noisy or a
 
 Model calibration, creator incentives on platforms, and benchmarking of LLMs and agentic systems.
 
+- **Identifying strategic behavior on platforms**: belief propagation for detecting refund hunters [[EC'26]()]
 - **Creator incentives**: cooperative game-theoretic approach to platform design [[AISTATS'26]()] --- *Oral presentation, top 10 of ~2100 submissions*
 - **Utility vs. engagement**: disentangling what users want from what keeps them scrolling [[FAccT'24](https://arxiv.org/pdf/2406.01611)]
 - **Peer prediction and fairness**: incentive-compatible mechanisms for heterogeneous populations [[TEAC'20](papers/het-pp.pdf)]

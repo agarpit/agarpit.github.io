@@ -1,3 +1,30 @@
+- title: "Collaborative Learning under Strategic Behavior: Mechanisms for Eliciting Feedback in Principal-Agent Bandit Games"
+  authors:
+    - name: Ramakrishnan K
+    - name: Arpit Agarwal
+      me: true
+    - name: Lakshmi Subramanian
+      url: https://cs.nyu.edu/~lakshmi/Lakshmi/Home.html
+    - name: Maximilian Nickel
+      url: https://maxn.io
+  venue: RLC
+  venue_full: Reinforcement Learning Conference
+  badge: other
+  year: 2026
+  note: "To Appear"
+
+- title: "Who Ate the Lunch? A Belief Propagation Algorithm for Identifying Refund Hunters"
+  authors:
+    - name: Chenkai Yu
+    - name: Arpit Agarwal
+      me: true
+    - name: Hongyao Ma
+  venue: EC
+  venue_full: ACM Conference on Economics and Computation
+  badge: other
+  year: 2026
+  note: "To Appear"
+
 - title: "Efficient Online Influence Maximization under the Independent Cascade Model with Node-Level Feedback"
   authors:
     - name: Arpit Agarwal
