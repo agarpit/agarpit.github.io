@@ -7,7 +7,7 @@ classes: wide
 ---
 
 
-I am an Assistant Professor at the [Department of Computer Science and Engineering](https://www.cse.iitb.ac.in/) at [IIT Bombay](https://www.iitb.ac.in/), and a member of [C-MInDS](https://www.cminds.iitb.ac.in/) (Centre for Machine Intelligence and Data Science) at [IIT Bombay](https://www.iitb.ac.in/).
+I am the Jane Street Chair Assistant Professor at the [Department of Computer Science and Engineering](https://www.cse.iitb.ac.in/) at [IIT Bombay](https://www.iitb.ac.in/), and a member of [C-MInDS](https://www.cminds.iitb.ac.in/) (Centre for Machine Intelligence and Data Science) at [IIT Bombay](https://www.iitb.ac.in/).
 
 Prior to joining IIT Bombay, I was a postdoctoral researcher at [FAIR Labs (Meta)](https://ai.meta.com/research/) working with [Max Nickel](https://maxn.io) on socially responsible recommendation systems. Before that, I was a postdoctoral fellow at the [Data Science Institute](https://datascience.columbia.edu/) at [Columbia University](https://www.columbia.edu/), hosted by [Prof. Yash Kanoria](http://www.columbia.edu/~yk2577/) and [Prof. Tim Roughgarden](http://timroughgarden.org). I completed my PhD from the [Department of Computer & Information Science](https://www.cis.upenn.edu/) at the [University of Pennsylvania](https://www.upenn.edu/), under the guidance of [Prof. Shivani Agarwal](https://scholar.google.com/citations?user=Q4ErnU4AAAAJ&hl=en).
 
